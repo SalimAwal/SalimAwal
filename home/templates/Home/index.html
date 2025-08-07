@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Salim Awal - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'Inter', 'sans-serif'],
+          },
+          colors: {
+            primary: '#6366F1',
+            accent: '#EC4899',
+            dark: '#1F2937',
+          },
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #e0e5ec;
+    }
+
+    .typewrite > .wrap {
+      border-right: 0.08em solid #fff;
+    }
+
+    .neumorphic {
+      border-radius: 20px;
+      background: #e0e5ec;
+      box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
+    }
+
+    .neumorphic-inset {
+      border-radius: 20px;
+      background: #e0e5ec;
+      box-shadow: inset 10px 10px 20px #a3b1c6, inset -10px -10px 20px #ffffff;
+    }
+
+    .neumorphic-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      width: 100%;
+      text-align: center;
+      background: #e0e5ec;
+      border-radius: 20px;
+      box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .neumorphic-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 5px 5px 15px #a3b1c6, -5px -5px 15px #ffffff;
+    }
+  </style>
+</head>
+<body class="font-sans text-dark">
+
+  <!-- Hero Section -->
+  <header class="relative text-white py-24 px-6 md:px-20">
+    <div class="absolute inset-0 bg-gradient-to-r from-indigo-700 to-pink-600 opacity-90 z-0"></div>
+
+    <div class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
+      <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-left" data-aos="fade-right">
+        <h1 class="text-5xl font-bold mb-4 drop-shadow-md">Salim Awal</h1>
+        <h2 class="text-2xl font-semibold mb-6 typewrite drop-shadow-md" data-period="2000" data-type='[ "Full-Stack Developer", "Tech Enthusiast", "Creative Coder" ]'>
+          <span class="wrap"></span>
+        </h2>
+        <p class="text-lg text-white/90 drop-shadow-md">I build scalable web apps and turn ideas into fast, elegant digital products.</p>
+      </div>
+      <div class="md:w-1/3 flex justify-center" data-aos="fade-left">
+        <img src="salim.jpg" alt="Salim Awal" class="rounded-2xl shadow-xl border-4 border-white w-44 h-44 md:w-56 md:h-56 object-cover" />
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto px-6 md:px-20 py-16">
+    <!-- About -->
+    <section id="about" class="mb-20" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-dark border-b-4 border-primary inline-block pb-2 mb-8">About Me</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div>
+          <p class="mb-4">I’m a full-stack developer specializing in responsive, user-first web apps. I love building both frontend and backend systems that scale and perform reliably.</p>
+          <p>When I’m not coding, I contribute to open-source, explore UI trends, or mentor upcoming developers. I aim to write code that’s clean, testable, and built to last.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4 text-primary">My Skills</h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="neumorphic-inset px-4 py-2 text-sm font-semibold text-dark">HTML</span>
+            <span class="neumorphic-inset px-4 py-2 text-sm font-semibold text-dark">CSS</span>
+            <span class="neumorphic-inset px-4 py-2 text-sm font-semibold text-dark">JavaScript</span>
+            <span class="neumorphic-inset px-4 py-2 text-sm font-semibold text-dark">Python</span>
+            <span class="neumorphic-inset px-4 py-2 text-sm font-semibold text-dark">Django</span>
+            <span class="neumorphic-inset px-4 py-2 text-sm font-semibold text-dark">React</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mb-20" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-dark border-b-4 border-primary inline-block pb-2 mb-8">Projects</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="neumorphic-card">
+          <h3 class="text-xl font-semibold mb-2">Task Manager App</h3>
+          <p class="text-gray-600 mb-4">Django-based app with authentication and task CRUD operations.</p>
+          <a href="https://github.com/SalimAwal" class="text-primary font-medium hover:underline">View on GitHub →</a>
+        </div>
+        <div class="neumorphic-card">
+          <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+          <p class="text-gray-600 mb-4">This responsive portfolio made using TailwindCSS and deployed online.</p>
+          <a href="https://github.com/SalimAwal" class="text-primary font-medium hover:underline">View on GitHub →</a>
+        </div>
+        <div class="neumorphic-card">
+          <h3 class="text-xl font-semibold mb-2">Weather Dashboard</h3>
+          <p class="text-gray-600 mb-4">Real-time weather info using JavaScript and OpenWeatherMap API.</p>
+          <a href="https://github.com/SalimAwal" class="text-primary font-medium hover:underline">View on GitHub →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mb-20" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-dark border-b-4 border-primary inline-block pb-2 mb-8">Get In Touch</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <a href="mailto:salimsemailid@gmail.com" class="neumorphic-card text-primary font-semibold">
+          salimsemailid@gmail.com
+        </a>
+        <a href="https://github.com/SalimAwal" target="_blank" class="neumorphic-card text-primary font-semibold">
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/SalimAwal/" target="_blank" class="neumorphic-card text-primary font-semibold">
+          LinkedIn
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-8">
+    <div class="text-center">
+      <p>© 2025 Salim Awal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Typewriter
+    var TxtType = function(el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+
+      this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+      var that = this;
+      var delta = 200 - Math.random() * 100;
+
+      if (this.isDeleting) { delta /= 2; }
+
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+
+      setTimeout(function() {
+        that.tick();
+      }, delta);
+    };
+
+    window.onload = function() {
+      var elements = document.getElementsByClassName('typewrite');
+      for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+    };
+  </script>
+</body>
+</html>
